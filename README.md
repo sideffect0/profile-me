@@ -1,2 +1,3 @@
 # profile-me
-Not Yet Decided
+
+`yarn run serve`

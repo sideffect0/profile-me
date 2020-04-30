@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+.record-field {
+  @apply flex justify-start cursor-pointer text-gray-700 rounded-md px-2 py-2 my-2;
+}
+.record-field:hover {
+ @apply text-blue-400 bg-blue-100;
+}
+.record-type-sym {
+ @apply bg-green-400 h-5 w-5 m-2 text-center text-white;
+}
+.record-type-value {
+ @apply flex-grow font-medium px-2;
+}
+.record-type-name {
+ @apply text-sm font-normal text-gray-500 tracking-wide;
+}
+@tailwind utilities;

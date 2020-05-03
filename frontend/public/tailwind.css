@@ -15,4 +15,16 @@
 .record-type-name {
  @apply text-sm font-normal text-gray-500 tracking-wide;
 }
+
+.service-menu-link {
+ @apply inline-block rounded-t py-4 w-full text-green-500 font-semibold;
+}
+
+.service-menu-link:hover {
+  @apply text-green-800;
+}
+.active-menu {
+ @apply text-green-800;
+}
+
 @tailwind utilities;

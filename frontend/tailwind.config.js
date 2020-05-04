@@ -5,7 +5,8 @@ module.exports = {
   purge: {
     mode: 'all',
     enabled: true,
-    content: ['./public/*.html'],
+    folders: ['./public/'],
+    extensions: ['html', 'css']
   },
   variants: {},
   plugins: [],

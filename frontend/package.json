@@ -1,6 +1,10 @@
 {
+  "name": "domain-tools",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "serve": "cross-env NODE_ENV=development concurrently \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
+    "serve": "cross-env NODE_ENV=development concurrently \"bsb -make-world -w\" \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
+    "bsb:clean": "bsb -clean-world",
     "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
     "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
     "start": "npm run serve"
@@ -15,6 +19,8 @@
     "cross-env": "^5.2.0",
     "cssnano": "^4.1.10",
     "live-server": "^1.2.1",
-    "postcss-cli": "^6.1.2"
+    "postcss-cli": "^6.1.2",
+    "@glennsl/bs-jest": "^0.4.9",
+    "bs-platform": "^7.0.1"
   }
 }

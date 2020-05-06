@@ -1,4 +1,5 @@
 
-let component = () => {
-  <div>{React.string("home")}</div>
-};
+let component = 
+ fun
+ | 1 => 2
+ | _ => 1;

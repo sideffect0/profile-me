@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "cross-env NODE_ENV=development concurrently \"bsb -make-world -w\" \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
+    "bsb:build": "bsb -make-world",
     "bsb:clean": "bsb -clean-world",
     "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
     "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
-    "start": "npm run serve",
+    "start": "yarn run serve",
     "test": "jest --watchAll --env=node"
   },
   "dependencies": {

@@ -1,4 +1,4 @@
 
 let component = () => {
- 2;
-}
+  <div>{React.string("home")}</div>
+};

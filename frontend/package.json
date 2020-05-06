@@ -13,11 +13,13 @@
   },
   "dependencies": {
     "autoprefixer": "^9.5.1",
-    "tailwindcss": "^1.0"
+    "tailwindcss": "^1.0",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "@glennsl/bs-jest": "^0.4.9",
+    "@vue/cli": "^4.3.1",
     "bs-platform": "^7.0.1",
     "concurrently": "^4.1.0",
     "cross-env": "^5.2.0",

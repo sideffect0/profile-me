@@ -7,7 +7,8 @@
     "bsb:clean": "bsb -clean-world",
     "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
     "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "test": "jest --watchAll --env=node"
   },
   "dependencies": {
     "autoprefixer": "^9.5.1",

@@ -3,29 +3,27 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "serve": "cross-env NODE_ENV=development concurrently \"bsb -make-world -w\" \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
-    "bsb:build": "bsb -make-world",
+    "build": "cross-env NODE_ENV=production parcel build public/*.html",
     "bsb:clean": "bsb -clean-world",
-    "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
-    "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
-    "start": "yarn run serve",
+    "serve": "cross-env NODE_ENV=development parcel serve public/*.html",
     "test": "jest --watchAll --env=node"
   },
   "dependencies": {
     "autoprefixer": "^9.5.1",
-    "tailwindcss": "^1.0",
-    "vue": "^2.6.11"
+    "bucklescript-tea": "^0.15.0",
+    "tailwindcss": "^1.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "@glennsl/bs-jest": "^0.4.9",
-    "@vue/cli": "^4.3.1",
     "bs-platform": "^7.0.1",
+    "bsb-js": "^1.1.7",
     "concurrently": "^4.1.0",
     "cross-env": "^5.2.0",
     "cssnano": "^4.1.10",
     "gentype": "^3.22.0",
     "live-server": "^1.2.1",
+    "parcel-bundler": "^1.12.4",
     "postcss-cli": "^6.1.2"
   }
 }

@@ -1,6 +1,9 @@
 node_modules
 build
+dist
 yarn.lock
 *.bs.js
+*.log
+.cache
 .merlin
 */lib/*

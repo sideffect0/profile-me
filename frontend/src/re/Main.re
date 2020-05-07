@@ -1,5 +1,4 @@
 
-let component = 
- fun
- | 1 => 1
- | _ => 2;
+let component = () => {
+ "future of something awesome" |> Js.log |> {(_) => 1};
+};

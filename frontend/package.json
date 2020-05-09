@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production parcel build public/*.html",
+    "build": "cross-env NODE_ENV=production bsb -make-world && parcel build public/*.html --experimental-scope-hoisting",
+    "bsb:build": "bsb -make-world",
     "bsb:clean": "bsb -clean-world",
-    "serve": "cross-env NODE_ENV=development parcel serve public/*.html",
+    "serve": "cross-env NODE_ENV=development concurrently \"bsb -make-world -w\" \"parcel serve public/*.html\"",
     "test": "jest --watchAll --env=node"
   },
   "dependencies": {

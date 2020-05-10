@@ -1,4 +1,3 @@
-open Main;
 
 let make = [%raw {|
     function(m){
@@ -8,4 +7,4 @@ let make = [%raw {|
     }
 |}];
 
-make(main);
+make(Main.main);

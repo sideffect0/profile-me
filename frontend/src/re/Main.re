@@ -25,7 +25,6 @@ let dns_resources = () => {
          ["C", "{resource.type}", "{resource.value}"],
          ["A", "{resource.type}", "{resource.value}"],
          ["N", "{resource.type}", "{resource.value}"],
-         ["T", "{resource.type}", "{resource.value}"],
          ["M", "{resource.type}", "{resource.value}"],
         ] |> List.map((el) => dns_record_field(List.nth(el, 0), List.nth(el, 1), List.nth(el, 2)));
 };

@@ -1,4 +1,5 @@
+package services
 
-func ServiceResponse(resource String, service String){
- 
+func ServiceResponse(service string, resource string) string{
+ return ""
 }

@@ -1,5 +1,5 @@
 package services
 
-func ServiceResponse(service string, resource string) string{
- return ""
+func ServiceResponse(service string, resource string) string {
+	return ""
 }

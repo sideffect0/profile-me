@@ -1,5 +1,11 @@
 package services
 
 func ServiceResponse(service string, resource string) string {
-	return ""
+	switch service {
+        case "whois":
+        case "dns":
+        case "mx":
+           println("made up")
+        }
+        return "dummy"
 }
